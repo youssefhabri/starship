@@ -6,6 +6,7 @@ mod go;
 mod line_break;
 mod nodejs;
 mod package;
+mod php;
 mod python;
 mod rust;
 mod username;
@@ -26,6 +27,7 @@ pub fn handle(module: &str, context: &Context) -> Option<Module> {
         "git_branch" => git_branch::segment(context),
         "git_status" => git_status::segment(context),
         "username" => username::segment(context),
+        "php" => php::segment(context),
 
         _ => panic!("Unknown module: {}", module),
     }

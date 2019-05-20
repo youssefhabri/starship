@@ -17,6 +17,7 @@ pub fn prompt(args: ArgMatches) {
         "rust",
         "python",
         "go",
+        "php",
         "line_break",
         "character",
     ];
